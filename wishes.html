@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Dad! 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #E8A020;
+    --gold-light: #F5C842;
+    --gold-dark: #A06B08;
+    --deep: #1A0F00;
+    --cream: #FFF8EC;
+    --warm: #FF6B35;
+    --rust: #C4441A;
+    --text: #1A0F00;
+    --muted: #7A5C38;
+    --card: #FFFCF5;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* ── FLOATING PARTICLES ── */
+  .particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: hidden; }
+  .particle {
+    position: absolute;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: float-up linear infinite;
+  }
+  @keyframes float-up {
+    0%   { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10%  { opacity: 0.6; }
+    90%  { opacity: 0.4; }
+    100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+    background: var(--deep);
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 50%, #3D1F00 0%, var(--deep) 70%);
+  }
+  .hero-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(232,160,32,0.15);
+    animation: pulse-ring 4s ease-in-out infinite;
+  }
+  .ring-1 { width: 300px; height: 300px; top: 50%; left: 50%; transform: translate(-50%,-50%); animation-delay: 0s; }
+  .ring-2 { width: 500px; height: 500px; top: 50%; left: 50%; transform: translate(-50%,-50%); animation-delay: 0.7s; }
+  .ring-3 { width: 700px; height: 700px; top: 50%; left: 50%; transform: translate(-50%,-50%); animation-delay: 1.4s; }
+  @keyframes pulse-ring {
+    0%, 100% { opacity: 0.3; transform: translate(-50%,-50%) scale(1); }
+    50% { opacity: 0.08; transform: translate(-50%,-50%) scale(1.04); }
+  }
+
+  .hero-crown {
+    font-size: 3.5rem;
+    position: relative;
+    z-index: 1;
+    animation: crown-bounce 2s ease-in-out infinite;
+    margin-bottom: 1rem;
+  }
+  @keyframes crown-bounce {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+  }
+
+  .hero-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1.2rem;
+    opacity: 0;
+    animation: fade-up 0.8s 0.3s forwards;
+  }
+
+  .hero-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: clamp(3.5rem, 10vw, 7rem);
+    line-height: 0.95;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fade-up 0.9s 0.5s forwards;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold-light);
+    display: block;
+  }
+
+  .hero-sub {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.55);
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fade-up 0.9s 0.8s forwards;
+    font-weight: 300;
+    max-width: 420px;
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.3);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    animation: fade-in 1s 2s forwards;
+    opacity: 0;
+  }
+  .scroll-line {
+    width: 1px; height: 40px;
+    background: linear-gradient(to bottom, rgba(232,160,32,0.6), transparent);
+    animation: scroll-line 1.5s ease-in-out infinite;
+  }
+  @keyframes scroll-line {
+    0% { transform: scaleY(0); transform-origin: top; }
+    50% { transform: scaleY(1); transform-origin: top; }
+    51% { transform: scaleY(1); transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in {
+    to { opacity: 1; }
+  }
+
+  /* ── SECTIONS ── */
+  section {
+    padding: 6rem 2rem;
+    position: relative;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .section-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 2.5rem;
+  }
+  .eyebrow-line {
+    width: 36px; height: 2px;
+    background: var(--gold);
+    flex-shrink: 0;
+  }
+  .eyebrow-text {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-dark);
+  }
+
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: 3rem;
+    color: var(--deep);
+  }
+  .section-title em {
+    font-style: italic;
+    color: var(--warm);
+  }
+
+  /* ── HALL OF FAME ── */
+  #hof {
+    background: var(--deep);
+  }
+  #hof .section-title { color: #fff; }
+  #hof .eyebrow-text { color: var(--gold); }
+
+  .hof-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5px;
+    border: 1.5px solid rgba(232,160,32,0.2);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .hof-item {
+    background: rgba(255,255,255,0.03);
+    padding: 2rem 1.5rem;
+    border: 0.5px solid rgba(232,160,32,0.1);
+    transition: background 0.3s;
+    cursor: default;
+  }
+  .hof-item:hover { background: rgba(232,160,32,0.07); }
+  .hof-number {
+    font-family: 'Fraunces', serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: rgba(232,160,32,0.18);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+  .hof-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--deep);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 100px;
+    margin-bottom: 0.75rem;
+  }
+  .hof-name {
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+  .hof-desc {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  /* ── MEMORY LANE ── */
+  #memories { background: var(--cream); }
+
+  .timeline {
+    position: relative;
+    padding-left: 2.5rem;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px; top: 8px; bottom: 8px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--gold), var(--warm), var(--gold));
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  .timeline-item.visible { opacity: 1; transform: translateX(0); }
+  .timeline-dot {
+    position: absolute;
+    left: -2.1rem;
+    top: 5px;
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    background: var(--gold);
+    border: 3px solid var(--cream);
+    box-shadow: 0 0 0 2px var(--gold);
+  }
+  .timeline-era {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-dark);
+    margin-bottom: 0.4rem;
+  }
+  .timeline-heading {
+    font-family: 'Fraunces', serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--deep);
+    margin-bottom: 0.5rem;
+  }
+  .timeline-body {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.75;
+    font-weight: 300;
+    max-width: 560px;
+  }
+
+  /* ── LETTER ── */
+  #letter {
+    background: var(--warm);
+    overflow: hidden;
+  }
+  #letter::before {
+    content: '"';
+    font-family: 'Fraunces', serif;
+    font-size: 28rem;
+    font-style: italic;
+    color: rgba(255,255,255,0.06);
+    position: absolute;
+    top: -8rem;
+    left: -3rem;
+    line-height: 1;
+    pointer-events: none;
+  }
+  #letter .section-title { color: #fff; }
+  #letter .eyebrow-text { color: rgba(255,255,255,0.7); }
+  #letter .eyebrow-line { background: rgba(255,255,255,0.5); }
+
+  .letter-body {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+    line-height: 1.85;
+    color: rgba(255,255,255,0.92);
+    max-width: 680px;
+    position: relative;
+    z-index: 1;
+  }
+  .letter-body p + p { margin-top: 1.5rem; }
+  .letter-sig {
+    margin-top: 2.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.05em;
+    position: relative;
+    z-index: 1;
+  }
+  .letter-sig strong { color: #fff; font-size: 1.1rem; }
+
+  /* ── FUN FACTS ── */
+  #facts { background: #fff; }
+
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  .fact-card {
+    border: 1.5px solid var(--gold);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .fact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(232,160,32,0.15);
+  }
+  .fact-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 80px; height: 80px;
+    background: var(--gold);
+    opacity: 0.06;
+    border-radius: 50%;
+    transform: translate(30%, 30%);
+  }
+  .fact-value {
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+  .fact-label {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--deep);
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  .footer-title {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--gold-light);
+    margin-bottom: 0.75rem;
+  }
+  .footer-sub {
+    color: rgba(255,255,255,0.35);
+    font-size: 0.85rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
+  .footer-hearts {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    letter-spacing: 6px;
+    animation: heartbeat 1.5s ease-in-out infinite;
+  }
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    30% { transform: scale(1.15); }
+    60% { transform: scale(0.97); }
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(12px);
+    background: rgba(26,15,0,0.7);
+    border-bottom: 0.5px solid rgba(232,160,32,0.15);
+  }
+  .nav-logo {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--gold);
+    font-size: 1.1rem;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1.75rem;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  @media (max-width: 600px) {
+    .nav-links { display: none; }
+    .hof-grid { grid-template-columns: 1fr 1fr; }
+    .facts-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- PARTICLES -->
+<div class="particles" id="particles"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Happy Birthday, Dad 🎂</div>
+  <ul class="nav-links">
+    <li><a href="#hof">Hall of fame</a></li>
+    <li><a href="#memories">Memories</a></li>
+    <li><a href="#letter">Letter</a></li>
+    <li><a href="#facts">Fun facts</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-ring ring-1"></div>
+  <div class="hero-ring ring-2"></div>
+  <div class="hero-ring ring-3"></div>
+  <div class="hero-crown">👑</div>
+  <div class="hero-tag">A celebration for the greatest</div>
+  <h1 class="hero-title">Happy<em>Birthday,</em>Dad!</h1>
+  <p class="hero-sub">Today we honour the man who made everything possible — with all our love.</p>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- HALL OF FAME -->
+<section id="hof">
+  <div class="container">
+    <div class="section-eyebrow">
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-text">Hall of fame</span>
+    </div>
+    <h2 class="section-title">The man.<br><em>The legend.</em></h2>
+    <div class="hof-grid">
+      <div class="hof-item">
+        <div class="hof-number">01</div>
+        <div class="hof-badge">Award</div>
+        <div class="hof-name">The Protector</div>
+        <div class="hof-desc">Always kept us safe and gave us the courage to face the world.</div>
+      </div>
+      <div class="hof-item">
+        <div class="hof-number">02</div>
+        <div class="hof-badge">Award</div>
+        <div class="hof-name">The Wise One</div>
+        <div class="hof-desc">His advice — whether asked for or not — was always right in the end.</div>
+      </div>
+      <div class="hof-item">
+        <div class="hof-number">03</div>
+        <div class="hof-badge">Award</div>
+        <div class="hof-name">Fix-it King</div>
+        <div class="hof-desc">No problem too big. No broken thing left unfixed. An absolute craftsman.</div>
+      </div>
+      <div class="hof-item">
+        <div class="hof-number">04</div>
+        <div class="hof-badge">Award</div>
+        <div class="hof-name">Heart of Gold</div>
+        <div class="hof-desc">Giving without ever expecting anything in return — a rare and precious gift.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMORY LANE -->
+<section id="memories">
+  <div class="container">
+    <div class="section-eyebrow">
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-text">Memory lane</span>
+    </div>
+    <h2 class="section-title">Moments that<br><em>live forever</em></h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-era">Early years</div>
+        <div class="timeline-heading">Learning to ride</div>
+        <div class="timeline-body">You ran alongside until I could fly on my own — and only let go when you were sure I was ready. That's always been your way.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-era">Growing up</div>
+        <div class="timeline-heading">Long car rides</div>
+        <div class="timeline-body">Your music on the radio, windows down, nowhere special to be. Those ordinary afternoons are the ones I treasure most.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-era">Big milestones</div>
+        <div class="timeline-heading">Front row, every time</div>
+        <div class="timeline-body">Every stage, every achievement, every proud moment — you were always there. Your smile in the crowd was the best part of every victory.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-era">Right now</div>
+        <div class="timeline-heading">Still my first call</div>
+        <div class="timeline-body">Good news or bad — you're still the first person I want to tell. Some things are too good to change.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIRTHDAY LETTER -->
+<section id="letter">
+  <div class="container">
+    <div class="section-eyebrow">
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-text">A letter from us</span>
+    </div>
+    <h2 class="section-title">Words that<br>needed saying</h2>
+    <div class="letter-body">
+      <p>Dear Dad,</p>
+      <p>No card, no gift, and no words will ever fully capture what you mean to us. You showed up — quietly, steadily, every single day — and that love is the greatest thing you've ever given.</p>
+      <p>We don't just celebrate the day you were born today. We celebrate every ordinary Tuesday you made extraordinary just by being you.</p>
+      <p>Thank you for being our hero, our safe place, and our biggest fan. Here's to you — today, tomorrow, and always.</p>
+    </div>
+    <div class="letter-sig">With all our love,<br><strong>Your family ❤️</strong></div>
+  </div>
+</section>
+
+<!-- FUN FACTS -->
+<section id="facts">
+  <div class="container">
+    <div class="section-eyebrow">
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-text">Fun facts</span>
+    </div>
+    <h2 class="section-title">Dad, <em>by the numbers</em></h2>
+    <div class="facts-grid">
+      <div class="fact-card">
+        <div class="fact-value">∞</div>
+        <div class="fact-label">Hugs given — and still counting</div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-value">#1</div>
+        <div class="fact-label">Dad ranking in the entire universe</div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-value">0</div>
+        <div class="fact-label">Problems he couldn't help solve</div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-value">100%</div>
+        <div class="fact-label">Always showing up when it matters most</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-title">Here's to you, Dad 🥂</div>
+  <div class="footer-sub">Made with love · For the greatest father in the world</div>
+  <div class="footer-hearts">❤️ ❤️ ❤️</div>
+</footer>
+
+<script>
+  // Particles
+  const colours = ['#E8A020','#F5C842','#FF6B35','#fff'];
+  const pc = document.getElementById('particles');
+  for (let i = 0; i < 28; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 6 + 3;
+    p.style.cssText = `
+      left: ${Math.random()*100}%;
+      width: ${size}px; height: ${size}px;
+      background: ${colours[Math.floor(Math.random()*colours.length)]};
+      animation-duration: ${6 + Math.random()*10}s;
+      animation-delay: ${Math.random()*8}s;
+      border-radius: ${Math.random() > 0.5 ? '50%' : '2px'};
+    `;
+    pc.appendChild(p);
+  }
+
+  // Timeline scroll reveal
+  const items = document.querySelectorAll('.timeline-item');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 120);
+      }
+    });
+  }, { threshold: 0.2 });
+  items.forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
