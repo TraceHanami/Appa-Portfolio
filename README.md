@@ -118,9 +118,24 @@ Make sure you have [Node.js](https://nodejs.org/) (v18 or higher) and `npm` inst
 This repository includes a preconfigured GitHub Actions workflow in `.github/workflows/deploy.yml`. 
 Simply push to the `main` branch, and GitHub Actions will automatically build and publish the site.
 
-### Vercel / Netlify
-- **Build Command**: `npm run build`
-- **Output Directory**: `dist`
+### Vercel Deployment (Recommended)
+This repository includes a [`vercel.json`](file:///home/tracehanami/Backup/scrap/appa%20website/vercel.json) configured for Vite with clean URLs, immutable asset caching, and route rewrites.
+
+#### Option A: Deploy via GitHub Integration (Zero Config)
+1. Push this repository to GitHub.
+2. Go to [vercel.com/new](https://vercel.com/new) and import your repository.
+3. Vercel will automatically detect Vite and [`vercel.json`](file:///home/tracehanami/Backup/scrap/appa%20website/vercel.json).
+4. Click **Deploy**.
+
+#### Option B: Deploy via Vercel CLI
+Run the following command in your terminal:
+```bash
+npx vercel --prod
+```
+
+### GitHub Pages (Automated)
+This repository includes a preconfigured GitHub Actions workflow in [`.github/workflows/deploy.yml`](file:///home/tracehanami/Backup/scrap/appa%20website/.github/workflows/deploy.yml). 
+Simply push to the `main` branch, and GitHub Actions will automatically build and publish the site.
 
 ---
 
