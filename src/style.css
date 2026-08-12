@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background-color: #D4AF37;
+  color: #0F141A;
+}
+
+.glass-header {
+  background: rgba(15, 20, 26, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0CA 0%, #D4AF37 50%, #997819 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #E6C687 0%, #D4AF37 50%, #B89327 100%);
+}
+
+.gold-gradient-bg:hover {
+  background: linear-gradient(135deg, #F0D499 0%, #E0BB43 50%, #C8A133 100%);
+}
+
+.before-after-slider {
+  position: relative;
+  user-select: none;
+}
+
+.before-after-slider .after-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  width: 50%;
+  border-right: 3px solid #D4AF37;
+}
+
+.slider-handle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #D4AF37;
+  color: #0F141A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}

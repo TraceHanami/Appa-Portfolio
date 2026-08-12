@@ -1,13 +1,1286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=appa%20website.html">
-<title>Elite Tile & Granite Works</title>
-</head>
-<body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Tile & Granite Works | Master Craftsmanship & Precision Stone Installation</title>
+<meta name="description" content="Master tile and granite installation services. Precision craftsmanship for luxury bathrooms, custom kitchens, porcelain flooring, and commercial stone work. Free on-site consultation.">
+<meta name="keywords" content="tile installation, granite countertops, marble bathroom, porcelain flooring, stonemason, Schluter waterproofing, Boston tile contractor">
+<meta name="author" content="Elite Tile & Granite Works">
+<link rel="canonical" href="https://elitetilegranite.com/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<!-- Open Graph / Social Media -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://elitetilegranite.com/">
+<meta property="og:title" content="Elite Tile & Granite Works | Master Craftsmanship & Precision Stone">
+<meta property="og:description" content="Master tile and granite installation services. Custom kitchens, luxury spa bathrooms, and commercial stone work with guaranteed precision.">
+<meta property="og:image" content="assets/hero_tiling.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Elite Tile & Granite Works | Master Craftsmanship">
+<meta name="twitter:description" content="Master tile and granite installation services. Custom kitchens, luxury spa bathrooms, and commercial stone work.">
+<meta name="twitter:image" content="assets/hero_tiling.jpg">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Remix Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+<!-- Local Compiled CSS for Vite -->
+<link rel="stylesheet" href="/src/style.css">
+
+<!-- Tailwind CSS CDN Fallback for Static Execution -->
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
 <script>
-window.location.href = "appa website.html";
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          stone: {
+            50: '#F9F8F6',
+            100: '#F2EFFB',
+            200: '#E5E0D8',
+            300: '#D4CFC6',
+            600: '#757067',
+            800: '#2C2B29',
+            900: '#1A1918',
+          },
+          gold: {
+            400: '#E6C687',
+            500: '#D4AF37',
+            600: '#B89327',
+          },
+          slate: {
+            850: '#141A21',
+            900: '#0F141A',
+          }
+        },
+        fontFamily: {
+          cinzel: ['Cinzel', 'serif'],
+          sans: ['Plus Jakarta Sans', 'sans-serif'],
+          heading: ['Montserrat', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Elite Tile & Granite Works",
+  "image": "assets/hero_tiling.jpg",
+  "description": "Master tile and granite installation services. Precision craftsmanship for luxury bathrooms, custom kitchens, porcelain flooring, and commercial stone work.",
+  "telephone": "+1-555-123-4567",
+  "email": "info@elitetilegranite.com",
+  "priceRange": "$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Boston",
+    "addressRegion": "MA",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "07:30",
+    "closes": "18:00"
+  }
+}
+</script>
+
+<style>
+  ::selection {
+    background-color: #D4AF37;
+    color: #0F141A;
+  }
+  .glass-header {
+    background: rgba(15, 20, 26, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  }
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #FFF0CA 0%, #D4AF37 50%, #997819 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gold-gradient-bg {
+    background: linear-gradient(135deg, #E6C687 0%, #D4AF37 50%, #B89327 100%);
+  }
+  .gold-gradient-bg:hover {
+    background: linear-gradient(135deg, #F0D499 0%, #E0BB43 50%, #C8A133 100%);
+  }
+  .before-after-slider {
+    position: relative;
+    user-select: none;
+  }
+  .before-after-slider .after-img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    width: 50%;
+    border-right: 3px solid #D4AF37;
+  }
+  .slider-handle {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #D4AF37;
+    color: #0F141A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    cursor: ew-resize;
+    z-index: 20;
+  }
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0F141A;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2C2B29;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+  }
+</style>
+</head>
+<body class="bg-slate-900 text-stone-100 font-sans antialiased selection:bg-gold-500 selection:text-slate-900">
+
+<!-- Top Announcement Bar -->
+<div class="bg-stone-900 border-b border-stone-800 text-xs py-2 px-4 text-stone-300">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+    <div class="flex items-center gap-4">
+      <span class="flex items-center gap-1"><i class="ri-shield-check-fill text-gold-500"></i> Licensed, Bonded & Insured</span>
+      <span class="hidden md:flex items-center gap-1"><i class="ri-award-fill text-gold-500"></i> CTI Certified Master Installer</span>
+    </div>
+    <div class="flex items-center gap-6">
+      <a href="tel:+15551234567" class="hover:text-gold-400 transition-colors flex items-center gap-1 font-semibold">
+        <i class="ri-phone-line text-gold-500"></i> (555) 123-4567
+      </a>
+      <a href="https://wa.me/15551234567" target="_blank" class="hover:text-emerald-400 transition-colors flex items-center gap-1 font-semibold">
+        <i class="ri-whatsapp-line text-emerald-500"></i> WhatsApp Us
+      </a>
+      <a href="wishes.html" class="hidden sm:inline-flex items-center gap-1 text-gold-400 hover:text-gold-300 transition-colors font-semibold">
+        <i class="ri-heart-3-fill text-rose-500"></i> Appa's Tribute
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Header Navigation -->
+<header class="glass-header sticky top-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg gold-gradient-bg flex items-center justify-center text-slate-900 font-bold text-xl shadow-lg shadow-gold-500/20 group-hover:scale-105 transition-transform">
+          <i class="ri-layout-grid-fill"></i>
+        </div>
+        <div>
+          <span class="font-cinzel text-xl font-bold tracking-wider text-white group-hover:text-gold-400 transition-colors">ELITE TILE</span>
+          <span class="block text-[10px] font-semibold tracking-widest text-gold-500 uppercase">& Granite Works</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#home" class="text-sm font-medium text-stone-200 hover:text-gold-400 transition-colors py-1">Home</a>
+        <a href="#about" class="text-sm font-medium text-stone-200 hover:text-gold-400 transition-colors py-1">About Us</a>
+        <a href="#services" class="text-sm font-medium text-stone-200 hover:text-gold-400 transition-colors py-1">Services</a>
+        <a href="#portfolio" class="text-sm font-medium text-stone-200 hover:text-gold-400 transition-colors py-1">Portfolio</a>
+        <a href="#estimator" class="text-sm font-medium text-gold-400 hover:text-gold-300 transition-colors py-1 flex items-center gap-1">
+          <i class="ri-calculator-line"></i> Cost Estimator
+        </a>
+        <a href="#transformations" class="text-sm font-medium text-stone-200 hover:text-gold-400 transition-colors py-1">Before & After</a>
+        <a href="#contact" class="text-sm font-medium text-stone-200 hover:text-gold-400 transition-colors py-1">Contact</a>
+        <a href="wishes.html" class="text-sm font-medium text-rose-400 hover:text-rose-300 transition-colors py-1 flex items-center gap-1">
+          <i class="ri-heart-fill"></i> Wishes
+        </a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="#contact" class="gold-gradient-bg text-slate-950 font-semibold px-6 py-2.5 rounded-lg text-sm shadow-lg shadow-gold-500/10 hover:shadow-gold-500/25 transition-all transform hover:-translate-y-0.5">
+          Get Free Estimate
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-btn" class="md:hidden text-stone-300 hover:text-white p-2 text-2xl focus:outline-none" aria-label="Toggle Navigation Menu">
+        <i class="ri-menu-3-line"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-stone-800 px-4 pt-2 pb-6 space-y-3">
+    <a href="#home" class="block text-base font-medium text-stone-200 hover:text-gold-400 py-2 border-b border-stone-800/50">Home</a>
+    <a href="#about" class="block text-base font-medium text-stone-200 hover:text-gold-400 py-2 border-b border-stone-800/50">About Us</a>
+    <a href="#services" class="block text-base font-medium text-stone-200 hover:text-gold-400 py-2 border-b border-stone-800/50">Services</a>
+    <a href="#portfolio" class="block text-base font-medium text-stone-200 hover:text-gold-400 py-2 border-b border-stone-800/50">Portfolio</a>
+    <a href="#estimator" class="block text-base font-medium text-gold-400 hover:text-gold-300 py-2 border-b border-stone-800/50">Cost Estimator</a>
+    <a href="#transformations" class="block text-base font-medium text-stone-200 hover:text-gold-400 py-2 border-b border-stone-800/50">Before & After</a>
+    <a href="#contact" class="block text-base font-medium text-stone-200 hover:text-gold-400 py-2 border-b border-stone-800/50">Contact</a>
+    <a href="wishes.html" class="block text-base font-medium text-rose-400 hover:text-rose-300 py-2 border-b border-stone-800/50 flex items-center gap-2">
+      <i class="ri-heart-fill"></i> Birthday Tribute Page
+    </a>
+    <div class="pt-2">
+      <a href="#contact" class="block text-center gold-gradient-bg text-slate-950 font-bold py-3 rounded-lg text-sm">
+        Request Free Estimate
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO SECTION SLIDESHOW -->
+<section id="home" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-950">
+  
+  <!-- Slide 1 -->
+  <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-100 z-10" style="background-image: linear-gradient(to right, rgba(15, 20, 26, 0.92) 0%, rgba(15, 20, 26, 0.5) 50%, rgba(15, 20, 26, 0.85) 100%), url('assets/hero_tiling.jpg'); background-size: cover; background-position: center;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center pt-12 pb-20">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-6">
+          <i class="ri-sparkling-fill"></i> Premium Tile & Granite Installation
+        </div>
+        <h1 class="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
+          Precision in Every Tile.<br>
+          <span class="gold-gradient-text">Strength in Every Stone.</span>
+        </h1>
+        <p class="text-stone-300 text-lg sm:text-xl font-light leading-relaxed mb-8 max-w-2xl">
+          Transforming residential & commercial spaces with master craftsmanship, laser-guided levelling, and premium natural stone since 2010.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="gold-gradient-bg text-slate-950 font-bold px-8 py-4 rounded-lg text-base shadow-xl shadow-gold-500/20 hover:scale-105 transition-all">
+            Get Free Consultation <i class="ri-arrow-right-line ml-1"></i>
+          </a>
+          <a href="#portfolio" class="bg-stone-900/80 hover:bg-stone-800 text-white border border-stone-700 font-semibold px-8 py-4 rounded-lg text-base transition-all backdrop-blur-md">
+            Explore Portfolio
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0 z-0" style="background-image: linear-gradient(to right, rgba(15, 20, 26, 0.92) 0%, rgba(15, 20, 26, 0.5) 50%, rgba(15, 20, 26, 0.85) 100%), url('assets/kitchen_granite.jpg'); background-size: cover; background-position: center;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center pt-12 pb-20">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-6">
+          <i class="ri-knife-line"></i> Custom Kitchen Countertops & Backsplashes
+        </div>
+        <h1 class="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
+          Elevate Your Culinary Space<br>
+          <span class="gold-gradient-text">With Flawless Granite</span>
+        </h1>
+        <p class="text-stone-300 text-lg sm:text-xl font-light leading-relaxed mb-8 max-w-2xl">
+          Seamless granite countertop fabrication, book-matched slabs, and custom herringbone tile backsplashes crafted to last a lifetime.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#estimator" class="gold-gradient-bg text-slate-950 font-bold px-8 py-4 rounded-lg text-base shadow-xl shadow-gold-500/20 hover:scale-105 transition-all">
+            Calculate Project Cost <i class="ri-calculator-line ml-1"></i>
+          </a>
+          <a href="#services" class="bg-stone-900/80 hover:bg-stone-800 text-white border border-stone-700 font-semibold px-8 py-4 rounded-lg text-base transition-all backdrop-blur-md">
+            View Kitchen Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0 z-0" style="background-image: linear-gradient(to right, rgba(15, 20, 26, 0.92) 0%, rgba(15, 20, 26, 0.5) 50%, rgba(15, 20, 26, 0.85) 100%), url('assets/living_flooring.jpg'); background-size: cover; background-position: center;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center pt-12 pb-20">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-6">
+          <i class="ri-building-2-line"></i> Large Format Flooring & Commercial
+        </div>
+        <h1 class="font-cinzel text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
+          Architectural Grandeur<br>
+          <span class="gold-gradient-text">For Flooring & Foyers</span>
+        </h1>
+        <p class="text-stone-300 text-lg sm:text-xl font-light leading-relaxed mb-8 max-w-2xl">
+          Expert installation of 24x48 porcelain slabs, wood-look planks, heated subfloor systems, and commercial lobby stone features.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="gold-gradient-bg text-slate-950 font-bold px-8 py-4 rounded-lg text-base shadow-xl shadow-gold-500/20 hover:scale-105 transition-all">
+            Book Site Survey <i class="ri-arrow-right-line ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Slide Nav Dots -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-3 bg-slate-900/60 px-4 py-2 rounded-full border border-stone-800/80 backdrop-blur-md">
+    <button class="hero-dot w-3 h-3 rounded-full bg-gold-500 transition-all" onclick="setSlide(0)" aria-label="Slide 1"></button>
+    <button class="hero-dot w-3 h-3 rounded-full bg-stone-600 hover:bg-stone-400 transition-all" onclick="setSlide(1)" aria-label="Slide 2"></button>
+    <button class="hero-dot w-3 h-3 rounded-full bg-stone-600 hover:bg-stone-400 transition-all" onclick="setSlide(2)" aria-label="Slide 3"></button>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<section class="bg-stone-900 border-y border-stone-800 py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="p-4 border-r border-stone-800 last:border-r-0">
+        <div class="font-cinzel text-3xl sm:text-4xl font-bold text-gold-400 mb-1">15+ Years</div>
+        <p class="text-xs uppercase tracking-widest text-stone-400 font-semibold">Master Craftsmanship</p>
+      </div>
+      <div class="p-4 border-r border-stone-800 last:border-r-0">
+        <div class="font-cinzel text-3xl sm:text-4xl font-bold text-gold-400 mb-1">850+</div>
+        <p class="text-xs uppercase tracking-widest text-stone-400 font-semibold">Completed Projects</p>
+      </div>
+      <div class="p-4 border-r border-stone-800 last:border-r-0">
+        <div class="font-cinzel text-3xl sm:text-4xl font-bold text-gold-400 mb-1">100%</div>
+        <p class="text-xs uppercase tracking-widest text-stone-400 font-semibold">Waterproof Guarantee</p>
+      </div>
+      <div class="p-4">
+        <div class="font-cinzel text-3xl sm:text-4xl font-bold text-gold-400 mb-1">4.9 / 5.0</div>
+        <p class="text-xs uppercase tracking-widest text-stone-400 font-semibold">Client Satisfaction</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-24 bg-slate-900 relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Craftsman Photo -->
+      <div class="lg:col-span-6 relative">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-stone-700/60 group">
+          <img src="assets/craftsman_at_work.jpg" alt="Master Tile Craftsman laying marble tile with laser guide" class="w-full h-[520px] object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+          
+          <!-- Badge overlay -->
+          <div class="absolute bottom-6 left-6 right-6 bg-slate-900/90 backdrop-blur-md p-6 rounded-xl border border-gold-500/30">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-full gold-gradient-bg flex items-center justify-center text-slate-900 text-2xl font-bold shrink-0">
+                <i class="ri-award-line"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-base">James Anderson (Appa)</h4>
+                <p class="text-xs text-gold-400 font-medium">Founder & Principal Master Stonemason</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="lg:col-span-6 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-widest">
+          Legacy of Excellence
+        </div>
+        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white leading-tight">
+          Uncompromised Quality in <br><span class="gold-gradient-text">Tile & Natural Stone</span>
+        </h2>
+        <p class="text-stone-300 text-base leading-relaxed font-light">
+          Founded on the timeless principles of precision, integrity, and meticulous care, Elite Tile & Granite Works delivers world-class tile and stone installations across luxury residences and premier commercial developments.
+        </p>
+        <p class="text-stone-300 text-base leading-relaxed font-light">
+          We combine traditional stonemasonry techniques with state-of-the-art laser levelling equipment and Schluter® waterproofing systems to ensure every joint is seamless, plumb, and built to withstand decades.
+        </p>
+
+        <!-- Certifications Grid -->
+        <div class="grid grid-cols-2 gap-4 pt-4 border-t border-stone-800">
+          <div class="flex items-start gap-3">
+            <i class="ri-checkbox-circle-fill text-gold-500 text-xl mt-0.5"></i>
+            <div>
+              <h5 class="text-white text-sm font-semibold">CTI Certified Installer</h5>
+              <p class="text-stone-400 text-xs">Ceramic Tile Education Foundation</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="ri-checkbox-circle-fill text-gold-500 text-xl mt-0.5"></i>
+            <div>
+              <h5 class="text-white text-sm font-semibold">Schluter® Specialist</h5>
+              <p class="text-stone-400 text-xs">Advanced Wet Area Waterproofing</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="ri-checkbox-circle-fill text-gold-500 text-xl mt-0.5"></i>
+            <div>
+              <h5 class="text-white text-sm font-semibold">Natural Stone Institute</h5>
+              <p class="text-stone-400 text-xs">Accredited Granite Professional</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="ri-checkbox-circle-fill text-gold-500 text-xl mt-0.5"></i>
+            <div>
+              <h5 class="text-white text-sm font-semibold">Dust-Free Installation</h5>
+              <p class="text-stone-400 text-xs">Clean Worksite Guarantee</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-4 flex flex-wrap items-center gap-4">
+          <a href="#contact" class="inline-flex items-center gap-2 gold-gradient-bg text-slate-950 font-bold px-7 py-3.5 rounded-lg text-sm hover:scale-105 transition-all shadow-lg">
+            Consult With Our Master Stonemason <i class="ri-arrow-right-line"></i>
+          </a>
+          <a href="wishes.html" class="inline-flex items-center gap-2 bg-stone-800 hover:bg-stone-700 text-rose-300 font-semibold px-6 py-3.5 rounded-lg text-sm transition-all border border-rose-500/30">
+            <i class="ri-heart-3-fill text-rose-500"></i> Appa's Birthday Page
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="py-24 bg-slate-950 border-t border-stone-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">
+        Our Specializations
+      </div>
+      <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white mb-4">
+        Comprehensive Tile & Granite Solutions
+      </h2>
+      <p class="text-stone-300 text-base font-light">
+        From custom spa bathroom build-outs to precision kitchen granite slab fabrication, we offer end-to-end installation services with guaranteed longevity.
+      </p>
+    </div>
+
+    <!-- Services Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Service 1: Floor Tiling -->
+      <div class="bg-stone-900/90 rounded-2xl border border-stone-800 overflow-hidden hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+        <div class="h-60 overflow-hidden relative">
+          <img src="assets/living_flooring.jpg" alt="Precision Floor Tiling" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur-md px-3 py-1 rounded-full text-gold-400 text-xs font-semibold border border-gold-500/20">
+            Residential & Commercial
+          </div>
+        </div>
+        <div class="p-8">
+          <div class="w-12 h-12 rounded-xl gold-gradient-bg text-slate-950 flex items-center justify-center text-2xl font-bold mb-5 shadow-lg shadow-gold-500/10">
+            <i class="ri-layout-grid-line"></i>
+          </div>
+          <h3 class="font-cinzel text-xl font-bold text-white mb-3">Precision Floor Tiling</h3>
+          <p class="text-stone-300 text-sm font-light leading-relaxed mb-6">
+            Flawless installation of porcelain, ceramic, terrazzo, and natural stone flooring across expansive living rooms, hallways, and open concepts.
+          </p>
+          <ul class="space-y-2.5 text-xs text-stone-300 mb-6">
+            <li class="flex items-center gap-2"><i class="ri-check-line text-gold-500 font-bold"></i> Laser-calibrated lippage-free levelling</li>
+            <li class="flex items-center gap-2"><i class="ri-check-line text-gold-500 font-bold"></i> Heated floor sub-system integration</li>
+            <li class="flex items-center gap-2"><i class="ri-check-line text-gold-500 font-bold"></i> Wood-look planks & 24x48 large format</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center text-gold-400 font-semibold text-sm hover:text-gold-300 transition-colors">
+            Book Floor Inspection <i class="ri-arrow-right-s-line ml-1"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 2: Spa Bathroom & Wall Tiling -->
+      <div class="bg-stone-900/90 rounded-2xl border border-stone-800 overflow-hidden hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+        <div class="h-60 overflow-hidden relative">
+          <img src="assets/hero_tiling.jpg" alt="Luxury Bathroom Tiling" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur-md px-3 py-1 rounded-full text-gold-400 text-xs font-semibold border border-gold-500/20">
+            Waterproof Certified
+          </div>
+        </div>
+        <div class="p-8">
+          <div class="w-12 h-12 rounded-xl gold-gradient-bg text-slate-950 flex items-center justify-center text-2xl font-bold mb-5 shadow-lg shadow-gold-500/10">
+            <i class="ri-drop-line"></i>
+          </div>
+          <h3 class="font-cinzel text-xl font-bold text-white mb-3">Spa Bathroom & Wall Work</h3>
+          <p class="text-stone-300 text-sm font-light leading-relaxed mb-6">
+            Complete shower stall transformations, curbless walk-in showers, mosaic accent walls, and total Schluter® waterproofing protection.
+          </p>
+          <ul class="space-y-2.5 text-xs text-stone-300 mb-6">
+            <li class="flex items-center gap-2"><i class="ri-check-line text-gold-500 font-bold"></i> Schluter Kerdi waterproofing membrane</li>
+            <li class="flex items-center gap-2"><i class="ri-check-line text-gold-500 font-bold"></i> Custom niche builds & bench seating</li>
+            <li class="flex items-center gap-2"><i class="ri-check-line text-gold-500 font-bold"></i> Book-matched marble wall slabs</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center text-gold-400 font-semibold text-sm hover:text-gold-300 transition-colors">
+            Design Your Bathroom <i class="ri-arrow-right-s-line ml-1"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Service 3: Granite & Quartz Countertops -->
+      <div class="bg-stone-900/90 rounded-2xl border border-stone-800 overflow-hidden hover:border-gold-500/50 transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+        <div class="h-60 overflow-hidden relative">
+          <img src="assets/kitchen_granite.jpg" alt="Custom Granite Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-transparent to-transparent opacity-80"></div>
+          <div class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur-md px-3 py-1 rounded-full text-gold-400 text-xs font-semibold border border-gold-500/20">
+            Custom Fabrication
+          </div>
+        </div>
+        <div class="p-8">
+          <div class="w-12 h-12 rounded-xl gold-gradient-bg text-slate-950 flex items-center justify-center text-2xl font-bold mb-5 shadow-lg shadow-gold-500/10">
+            <i class="ri-scissors-cut-line"></i>
+          </div>
+          <h3 class="font-cinzel text-xl font-bold text-white mb-3">Custom Granite & Quartz</h3>
+          <p class="text-stone-300 text-sm font-light leading-relaxed mb-6">
+            Expert fabrication and seamless fitting of granite, quartz, and quartzite countertops, waterfall edges, and undermount sinks.
+          </p>
+          <ul class="space-y-2.5 text-xs text-stone-300 mb-6">
+            <li class="flex items-center gap-2"><i class="ri-check-line text-gold-500 font-bold"></i> Precision edge profiling (Ogee, Bullnose)</li>
+            <li class="flex items-center gap-2"><i class="ri-check-line text-gold-500 font-bold"></i> Undermount sink cutouts & sealing</li>
+            <li class="flex items-center gap-2"><i class="ri-check-line text-gold-500 font-bold"></i> Stain-resistant nano sealant finish</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center text-gold-400 font-semibold text-sm hover:text-gold-300 transition-colors">
+            Select Stone Material <i class="ri-arrow-right-s-line ml-1"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE COST ESTIMATOR TOOL -->
+<section id="estimator" class="py-24 bg-slate-900 border-t border-stone-800">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-stone-900/90 rounded-3xl border border-stone-800 p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+      
+      <!-- Background accent glow -->
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-3">
+          <i class="ri-calculator-line"></i> Instant Estimator
+        </div>
+        <h2 class="font-cinzel text-3xl font-bold text-white mb-2">Project Cost Calculator</h2>
+        <p class="text-stone-300 text-sm font-light">Select your project parameters below to get an instant estimated price range for materials & expert labor.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Controls Left -->
+        <div class="space-y-6">
+          
+          <!-- Project Type -->
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">1. Select Project Scope</label>
+            <select id="est-type" onchange="calculateEstimate()" class="w-full bg-slate-950 border border-stone-700 text-white rounded-xl px-4 py-3 text-sm focus:border-gold-500 focus:outline-none">
+              <option value="12">Bathroom Wall & Floor Tiling ($12/sq ft base)</option>
+              <option value="10">Kitchen Floor Tiling ($10/sq ft base)</option>
+              <option value="15">Custom Kitchen Backsplash ($15/sq ft base)</option>
+              <option value="25">Granite & Stone Countertops ($25/sq ft base)</option>
+              <option value="18">Outdoor Stone Patio Paving ($18/sq ft base)</option>
+            </select>
+          </div>
+
+          <!-- Area Range Slider -->
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="text-xs font-semibold uppercase tracking-wider text-stone-300">2. Estimated Area (Sq Ft)</label>
+              <span id="est-area-val" class="font-mono text-gold-400 font-bold text-base">250 sq ft</span>
+            </div>
+            <input type="range" id="est-area" min="50" max="1500" step="25" value="250" oninput="calculateEstimate()" class="w-full h-2 bg-slate-950 rounded-lg appearance-none cursor-pointer accent-gold-500">
+            <div class="flex justify-between text-[10px] text-stone-500 mt-1">
+              <span>50 sq ft</span>
+              <span>750 sq ft</span>
+              <span>1500 sq ft</span>
+            </div>
+          </div>
+
+          <!-- Material Quality -->
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">3. Material Grade</label>
+            <div class="grid grid-cols-3 gap-3">
+              <button class="est-mat-btn bg-gold-500 text-slate-950 font-bold py-2.5 rounded-lg text-xs transition-all border border-gold-400" onclick="setMaterial(1.0, this)">Standard Porcelain</button>
+              <button class="est-mat-btn bg-slate-950 text-stone-300 font-medium py-2.5 rounded-lg text-xs hover:text-white transition-all border border-stone-800" onclick="setMaterial(1.4, this)">Luxury Italian Marble</button>
+              <button class="est-mat-btn bg-slate-950 text-stone-300 font-medium py-2.5 rounded-lg text-xs hover:text-white transition-all border border-stone-800" onclick="setMaterial(1.8, this)">Exotic Granite Slab</button>
+            </div>
+          </div>
+
+          <!-- Addons -->
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">4. Protection & Add-ons</label>
+            <div class="space-y-2">
+              <label class="flex items-center gap-3 text-xs text-stone-300 cursor-pointer">
+                <input type="checkbox" id="est-waterproof" onchange="calculateEstimate()" class="w-4 h-4 rounded bg-slate-950 border-stone-700 text-gold-500 focus:ring-0">
+                Schluter® Full Waterproof Membrane (+$4/sq ft)
+              </label>
+              <label class="flex items-center gap-3 text-xs text-stone-300 cursor-pointer">
+                <input type="checkbox" id="est-heated" onchange="calculateEstimate()" class="w-4 h-4 rounded bg-slate-950 border-stone-700 text-gold-500 focus:ring-0">
+                In-Floor Electric Radiant Heating (+$8/sq ft)
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Result Box Right -->
+        <div class="bg-slate-950 border border-stone-800 rounded-2xl p-6 sm:p-8 flex flex-col justify-between text-center md:text-left">
+          <div>
+            <span class="text-xs uppercase tracking-widest text-stone-400 font-medium">Estimated Project Total</span>
+            <div class="my-4">
+              <span id="est-price-display" class="font-cinzel text-4xl sm:text-5xl font-bold gold-gradient-text">$3,000 - $3,750</span>
+            </div>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Includes material estimate, surface prep, laser alignment installation, grout sealing, and complete cleanup.
+            </p>
+          </div>
+
+          <div class="pt-6 border-t border-stone-800 mt-6">
+            <button onclick="bookWithEstimate()" class="w-full gold-gradient-bg text-slate-950 font-bold py-3.5 rounded-xl text-sm shadow-xl shadow-gold-500/20 hover:scale-105 transition-all">
+              Lock In Free On-Site Consultation <i class="ri-arrow-right-line ml-1"></i>
+            </button>
+            <p class="text-[11px] text-stone-500 text-center mt-2">No obligation. Exact quotes provided after physical site measurement.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE & AFTER TRANSFORMATIONS -->
+<section id="transformations" class="py-24 bg-slate-950 border-t border-stone-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">
+        Visual Proof of Craftsmanship
+      </div>
+      <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white mb-4">
+        Before & After Transformations
+      </h2>
+      <p class="text-stone-300 text-base font-light">
+        Drag the interactive slider on the image below to reveal how we turn outdated, worn spaces into high-end luxury marble & granite environments.
+      </p>
+    </div>
+
+    <!-- Interactive Comparison Slider Container -->
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-stone-900 p-4 rounded-2xl border border-stone-800 shadow-2xl">
+        <h3 class="font-cinzel text-xl font-bold text-white mb-4 text-center">Master Bathroom Total Overhaul</h3>
+        
+        <div id="slider-container" class="before-after-slider h-[420px] sm:h-[500px] rounded-xl overflow-hidden relative cursor-ew-resize">
+          <!-- BEFORE Image (Base) -->
+          <img src="assets/bathroom_before.jpg" alt="Outdated bathroom before tile renovation" class="w-full h-full object-cover">
+          <span class="absolute top-4 left-4 bg-slate-950/80 text-rose-400 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md border border-rose-500/30 z-10">Before</span>
+
+          <!-- AFTER Image (Overlay container) -->
+          <div id="after-container" class="after-img-container">
+            <img src="assets/bathroom_after.jpg" alt="Renovated modern marble bathroom" class="w-full h-full object-cover" style="width: 100%; max-width: none;">
+            <span class="absolute top-4 right-4 bg-slate-950/80 text-gold-400 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md border border-gold-500/30 z-10">After</span>
+          </div>
+
+          <!-- Slider Handle Button -->
+          <div id="slider-handle" class="slider-handle" style="left: 50%;">
+            <i class="ri-split-cells-horizontal-line text-lg"></i>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-4 text-xs text-stone-400">
+          <span><i class="ri-arrow-left-line"></i> Drag left/right to compare</span>
+          <span class="text-gold-400 font-semibold">100% Water-Tight Schluter System</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio" class="py-24 bg-slate-900 border-t border-stone-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-3">
+          Our Recent Works
+        </div>
+        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">Project Gallery</h2>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap gap-2 bg-slate-950 p-1.5 rounded-xl border border-stone-800">
+        <button class="port-filter active bg-gold-500 text-slate-950 font-bold px-4 py-2 rounded-lg text-xs transition-all" onclick="filterPortfolio('all', this)">All Projects</button>
+        <button class="port-filter text-stone-300 hover:text-white font-medium px-4 py-2 rounded-lg text-xs transition-all" onclick="filterPortfolio('bathroom', this)">Bathrooms</button>
+        <button class="port-filter text-stone-300 hover:text-white font-medium px-4 py-2 rounded-lg text-xs transition-all" onclick="filterPortfolio('kitchen', this)">Kitchens</button>
+        <button class="port-filter text-stone-300 hover:text-white font-medium px-4 py-2 rounded-lg text-xs transition-all" onclick="filterPortfolio('flooring', this)">Flooring</button>
+        <button class="port-filter text-stone-300 hover:text-white font-medium px-4 py-2 rounded-lg text-xs transition-all" onclick="filterPortfolio('commercial', this)">Commercial</button>
+      </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="port-item bathroom bg-stone-900 rounded-2xl border border-stone-800 overflow-hidden group shadow-xl">
+        <div class="h-64 overflow-hidden relative">
+          <img src="assets/hero_tiling.jpg" alt="Master Marble Spa Bathroom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <button onclick="openModal('Master Marble Spa Bathroom', 'assets/hero_tiling.jpg', 'Complete master suite bathroom featuring 24x48 Italian Calacatta marble porcelain tiles, zero-threshold curbless shower, linear drain, and custom floating black granite double vanity.', 'Newton, MA', '3 Weeks')" class="gold-gradient-bg text-slate-950 font-bold px-5 py-2.5 rounded-lg text-xs shadow-lg">
+              View Project Details
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400">Bathroom Renovation</span>
+          <h4 class="font-cinzel text-lg font-bold text-white mt-1">Master Marble Spa Bathroom</h4>
+          <p class="text-stone-400 text-xs mt-1">Newton, MA · 24"x48" Porcelain & Granite</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="port-item kitchen bg-stone-900 rounded-2xl border border-stone-800 overflow-hidden group shadow-xl">
+        <div class="h-64 overflow-hidden relative">
+          <img src="assets/kitchen_granite.jpg" alt="Luxury Black Granite & Backsplash" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <button onclick="openModal('Luxury Black Granite Kitchen', 'assets/kitchen_granite.jpg', 'Custom fabricated Black Absolute granite countertops with mitered waterfall edge, undermount sink, and intricate ceramic herringbone backsplash.', 'Cambridge, MA', '2 Weeks')" class="gold-gradient-bg text-slate-950 font-bold px-5 py-2.5 rounded-lg text-xs shadow-lg">
+              View Project Details
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400">Kitchen & Countertops</span>
+          <h4 class="font-cinzel text-lg font-bold text-white mt-1">Black Granite Waterfall Kitchen</h4>
+          <p class="text-stone-400 text-xs mt-1">Cambridge, MA · Absolute Granite & Herringbone</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="port-item flooring bg-stone-900 rounded-2xl border border-stone-800 overflow-hidden group shadow-xl">
+        <div class="h-64 overflow-hidden relative">
+          <img src="assets/living_flooring.jpg" alt="Open Concept Porcelain Floor" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <button onclick="openModal('Open Concept Porcelain Flooring', 'assets/living_flooring.jpg', '850 sq ft seamless tile flooring installation across living room, dining, and foyer using laser levelling clip systems for absolute flat layout.', 'Wellesley, MA', '10 Days')" class="gold-gradient-bg text-slate-950 font-bold px-5 py-2.5 rounded-lg text-xs shadow-lg">
+              View Project Details
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400">Large Format Flooring</span>
+          <h4 class="font-cinzel text-lg font-bold text-white mt-1">Contemporary Foyer Flooring</h4>
+          <p class="text-stone-400 text-xs mt-1">Wellesley, MA · 850 Sq Ft Porcelain</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="port-item commercial bg-stone-900 rounded-2xl border border-stone-800 overflow-hidden group shadow-xl">
+        <div class="h-64 overflow-hidden relative">
+          <img src="assets/commercial_lobby.jpg" alt="Commercial Office Lobby Stone Feature" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <button onclick="openModal('Commercial Office Lobby Stone', 'assets/commercial_lobby.jpg', 'High-traffic commercial elevator lobby featuring polished granite floor tiles and book-matched white vein marble accent walls.', 'Boston Financial District', '4 Weeks')" class="gold-gradient-bg text-slate-950 font-bold px-5 py-2.5 rounded-lg text-xs shadow-lg">
+              View Project Details
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400">Commercial Stone</span>
+          <h4 class="font-cinzel text-lg font-bold text-white mt-1">Financial Center Executive Lobby</h4>
+          <p class="text-stone-400 text-xs mt-1">Boston, MA · Polished Granite & Marble</p>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="port-item outdoor bg-stone-900 rounded-2xl border border-stone-800 overflow-hidden group shadow-xl">
+        <div class="h-64 overflow-hidden relative">
+          <img src="assets/outdoor_patio.jpg" alt="Outdoor Stone Patio & Fireplace" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <button onclick="openModal('Outdoor Natural Stone Patio', 'assets/outdoor_patio.jpg', 'Custom outdoor living area built with slip-resistant slate stone pavers and stone masonry fireplace built to withstand New England winter freeze-thaw cycles.', 'Brookline, MA', '3 Weeks')" class="gold-gradient-bg text-slate-950 font-bold px-5 py-2.5 rounded-lg text-xs shadow-lg">
+              View Project Details
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400">Outdoor Paving</span>
+          <h4 class="font-cinzel text-lg font-bold text-white mt-1">Natural Slate Stone Patio</h4>
+          <p class="text-stone-400 text-xs mt-1">Brookline, MA · Slate Pavers & Fireplace</p>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="port-item bathroom bg-stone-900 rounded-2xl border border-stone-800 overflow-hidden group shadow-xl">
+        <div class="h-64 overflow-hidden relative">
+          <img src="assets/bathroom_after.jpg" alt="Luxury Spa En-Suite Bathroom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <button onclick="openModal('Spa En-Suite Bathroom', 'assets/bathroom_after.jpg', 'Complete bathroom strip and rebuild featuring dual floating vanity, backlit mirror, LED recessed niches, and dark slate floor contrast tiles.', 'Lexington, MA', '3 Weeks')" class="gold-gradient-bg text-slate-950 font-bold px-5 py-2.5 rounded-lg text-xs shadow-lg">
+              View Project Details
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400">Bathroom Renovation</span>
+          <h4 class="font-cinzel text-lg font-bold text-white mt-1">Modern Floating Vanity Bathroom</h4>
+          <p class="text-stone-400 text-xs mt-1">Lexington, MA · Full Schluter Waterproofing</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS & REVIEWS SECTION -->
+<section id="testimonials" class="py-24 bg-slate-950 border-t border-stone-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">
+        Verified Reviews
+      </div>
+      <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white mb-4">
+        What Our Clients Say
+      </h2>
+      <p class="text-stone-300 text-base font-light">
+        Read real feedback from homeowners and general contractors who trusted us with their high-end tile & granite projects.
+      </p>
+    </div>
+
+    <!-- Review Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Review 1 -->
+      <div class="bg-stone-900 p-8 rounded-2xl border border-stone-800 relative">
+        <div class="flex items-center gap-1 text-amber-400 text-base mb-4">
+          <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+        </div>
+        <p class="text-stone-300 text-sm font-light leading-relaxed mb-6 italic">
+          "James and his team completely transformed our outdated master bathroom into a high-end spa retreat. The tile cuts around the window and shower niche are razor-sharp. He showed up every morning on time and left the house spotless!"
+        </p>
+        <div class="flex items-center gap-3 pt-4 border-t border-stone-800">
+          <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold text-sm">
+            RJ
+          </div>
+          <div>
+            <h5 class="text-white text-sm font-bold">Robert Johnson</h5>
+            <p class="text-stone-400 text-xs">Newton, MA · Bathroom Remodel</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-stone-900 p-8 rounded-2xl border border-stone-800 relative">
+        <div class="flex items-center gap-1 text-amber-400 text-base mb-4">
+          <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+        </div>
+        <p class="text-stone-300 text-sm font-light leading-relaxed mb-6 italic">
+          "Finding a stonemason who knows how to properly cut and seal granite without visible seams is rare. Elite Tile fabricated our kitchen island countertop seamlessly. Highly recommended!"
+        </p>
+        <div class="flex items-center gap-3 pt-4 border-t border-stone-800">
+          <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold text-sm">
+            JM
+          </div>
+          <div>
+            <h5 class="text-white text-sm font-bold">Jennifer Martinez</h5>
+            <p class="text-stone-400 text-xs">Cambridge, MA · Granite Kitchen Countertops</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="bg-stone-900 p-8 rounded-2xl border border-stone-800 relative">
+        <div class="flex items-center gap-1 text-amber-400 text-base mb-4">
+          <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+        </div>
+        <p class="text-stone-300 text-sm font-light leading-relaxed mb-6 italic">
+          "We installed 900 sq ft of large format porcelain floor tiles over a heated subfloor. James used laser levelling systems and the floor is 100% flat. Absolutely outstanding craftsmanship!"
+        </p>
+        <div class="flex items-center gap-3 pt-4 border-t border-stone-800">
+          <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center font-bold text-sm">
+            MT
+          </div>
+          <div>
+            <h5 class="text-white text-sm font-bold">Michael Thompson</h5>
+            <p class="text-stone-400 text-xs">Wellesley, MA · Full Flooring Installation</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT & CONSULTATION SECTION -->
+<section id="contact" class="py-24 bg-slate-900 border-t border-stone-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      
+      <!-- Contact Info Left -->
+      <div class="lg:col-span-5 space-y-8">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-3">
+            Start Your Project
+          </div>
+          <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white mb-4">Get In Touch</h2>
+          <p class="text-stone-300 text-sm font-light leading-relaxed">
+            Ready to elevate your space with precision tiling and granite work? Reach out today for a free on-site consultation and detailed cost proposal.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-900 border border-stone-800">
+            <div class="w-10 h-10 rounded-lg gold-gradient-bg text-slate-950 flex items-center justify-center text-xl shrink-0 font-bold">
+              <i class="ri-phone-line"></i>
+            </div>
+            <div>
+              <h5 class="text-white text-sm font-bold">Direct Phone</h5>
+              <a href="tel:+15551234567" class="text-gold-400 text-sm font-medium hover:underline">(555) 123-4567</a>
+              <p class="text-stone-400 text-xs">Mon - Sat: 7:30 AM - 6:00 PM</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-900 border border-stone-800">
+            <div class="w-10 h-10 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center text-xl shrink-0 font-bold">
+              <i class="ri-whatsapp-line"></i>
+            </div>
+            <div>
+              <h5 class="text-white text-sm font-bold">Instant WhatsApp Chat</h5>
+              <a href="https://wa.me/15551234567" target="_blank" class="text-emerald-400 text-sm font-medium hover:underline">Send Photos or Blueprint PDF</a>
+              <p class="text-stone-400 text-xs">Quick response within 1 hour</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-900 border border-stone-800">
+            <div class="w-10 h-10 rounded-lg gold-gradient-bg text-slate-950 flex items-center justify-center text-xl shrink-0 font-bold">
+              <i class="ri-mail-send-line"></i>
+            </div>
+            <div>
+              <h5 class="text-white text-sm font-bold">Email Inquiry</h5>
+              <a href="mailto:info@elitetilegranite.com" class="text-gold-400 text-sm font-medium hover:underline">info@elitetilegranite.com</a>
+              <p class="text-stone-400 text-xs">Send job specs & measurements</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-4 rounded-xl bg-stone-900 border border-stone-800">
+            <div class="w-10 h-10 rounded-lg gold-gradient-bg text-slate-950 flex items-center justify-center text-xl shrink-0 font-bold">
+              <i class="ri-map-pin-2-line"></i>
+            </div>
+            <div>
+              <h5 class="text-white text-sm font-bold">Service Coverage Area</h5>
+              <p class="text-stone-300 text-xs">Greater Boston, Newton, Cambridge, Wellesley, Brookline, Lexington & surrounding 45-mile radius.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Right -->
+      <div class="lg:col-span-7 bg-stone-900/90 rounded-3xl border border-stone-800 p-8 sm:p-10 shadow-2xl">
+        <h3 class="font-cinzel text-2xl font-bold text-white mb-2">Request Free On-Site Quote</h3>
+        <p class="text-stone-400 text-xs mb-8">Fill out the details below and we will contact you within 24 hours.</p>
+
+        <form id="contact-form" onsubmit="submitForm(event)" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Full Name *</label>
+              <input type="text" id="form-name" required placeholder="e.g. David Miller" class="w-full bg-slate-950 border border-stone-700 text-white rounded-xl px-4 py-3 text-sm focus:border-gold-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Phone Number *</label>
+              <input type="tel" id="form-phone" required placeholder="(555) 000-0000" class="w-full bg-slate-950 border border-stone-700 text-white rounded-xl px-4 py-3 text-sm focus:border-gold-500 focus:outline-none">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Email Address *</label>
+              <input type="email" id="form-email" required placeholder="david@example.com" class="w-full bg-slate-950 border border-stone-700 text-white rounded-xl px-4 py-3 text-sm focus:border-gold-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Project Type *</label>
+              <select id="form-service" required class="w-full bg-slate-950 border border-stone-700 text-white rounded-xl px-4 py-3 text-sm focus:border-gold-500 focus:outline-none">
+                <option value="Bathroom Tile & Shower">Bathroom Tile & Shower</option>
+                <option value="Kitchen Granite & Countertops">Kitchen Granite & Countertops</option>
+                <option value="Flooring Tiling">Floor Tiling Installation</option>
+                <option value="Commercial Stone Feature">Commercial Stone Project</option>
+                <option value="Outdoor Stone Patio">Outdoor Stone Patio</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">Project Description & Dimensions</label>
+            <textarea id="form-msg" rows="4" placeholder="Tell us about your project timeline, tile preferences, square footage, or any specific requirements..." class="w-full bg-slate-950 border border-stone-700 text-white rounded-xl px-4 py-3 text-sm focus:border-gold-500 focus:outline-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full gold-gradient-bg text-slate-950 font-bold py-4 rounded-xl text-base shadow-xl shadow-gold-500/20 hover:scale-[1.02] transition-all">
+            Submit Estimate Request <i class="ri-send-plane-fill ml-1"></i>
+          </button>
+        </form>
+
+        <div id="form-success" class="hidden mt-6 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 p-4 rounded-xl text-center text-sm font-medium">
+          <i class="ri-checkbox-circle-fill text-xl align-middle mr-1"></i> Thank you! Your estimate request has been received. We will call you within 24 hours.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate-950 border-t border-stone-800 text-stone-400 text-xs py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      
+      <!-- Col 1 -->
+      <div class="space-y-4">
+        <a href="#home" class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg gold-gradient-bg flex items-center justify-center text-slate-900 font-bold text-lg">
+            <i class="ri-layout-grid-fill"></i>
+          </div>
+          <span class="font-cinzel text-lg font-bold tracking-wider text-white">ELITE TILE</span>
+        </a>
+        <p class="text-stone-400 leading-relaxed">
+          Master tile and granite installation services. Dedicated to precision craftsmanship, water-tight waterproofing, and lasting elegance since 2010.
+        </p>
+      </div>
+
+      <!-- Col 2 -->
+      <div>
+        <h5 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Quick Links</h5>
+        <ul class="space-y-2.5">
+          <li><a href="#home" class="hover:text-gold-400 transition-colors">Home</a></li>
+          <li><a href="#about" class="hover:text-gold-400 transition-colors">About Appa & Craftsmanship</a></li>
+          <li><a href="#services" class="hover:text-gold-400 transition-colors">Services</a></li>
+          <li><a href="#estimator" class="hover:text-gold-400 transition-colors">Cost Calculator</a></li>
+          <li><a href="#portfolio" class="hover:text-gold-400 transition-colors">Project Portfolio</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div>
+        <h5 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Specialties</h5>
+        <ul class="space-y-2.5">
+          <li><a href="#services" class="hover:text-gold-400 transition-colors">Curbless Walk-in Showers</a></li>
+          <li><a href="#services" class="hover:text-gold-400 transition-colors">Schluter Waterproofing</a></li>
+          <li><a href="#services" class="hover:text-gold-400 transition-colors">Book-Matched Marble Slabs</a></li>
+          <li><a href="#services" class="hover:text-gold-400 transition-colors">Black Granite Countertops</a></li>
+          <li><a href="#services" class="hover:text-gold-400 transition-colors">Radiant In-Floor Heating</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div>
+        <h5 class="text-white text-sm font-bold uppercase tracking-wider mb-4">Licensing & Standards</h5>
+        <p class="leading-relaxed mb-4">
+          Full compliance with TCNA (Tile Council of North America) installation specifications and ANSI A108 standards.
+        </p>
+        <div class="flex items-center gap-3 text-lg text-gold-400">
+          <i class="ri-shield-check-line" title="Licensed & Insured"></i>
+          <i class="ri-award-line" title="CTI Certified"></i>
+          <i class="ri-verified-badge-line" title="Master Stonemason"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-stone-800/60 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p>&copy; 2026 Elite Tile & Granite Works. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="wishes.html" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 hover:text-gold-300 text-xs transition-colors">
+          <i class="ri-heart-3-fill text-rose-500"></i> Birthday Tribute Page
+        </a>
+        <span class="text-stone-500">Crafted with precision & pride for Appa</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP & CALL BUTTON -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+  <a href="https://wa.me/15551234567" target="_blank" class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center text-2xl shadow-xl hover:scale-110 transition-all" title="WhatsApp Quick Chat">
+    <i class="ri-whatsapp-line"></i>
+  </a>
+  <a href="tel:+15551234567" class="w-12 h-12 rounded-full gold-gradient-bg text-slate-950 flex items-center justify-center text-2xl shadow-xl hover:scale-110 transition-all" title="Direct Phone Call">
+    <i class="ri-phone-line"></i>
+  </a>
+</div>
+
+<!-- PORTFOLIO DETAIL MODAL -->
+<div id="project-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+  <div class="bg-stone-900 border border-stone-800 rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl">
+    <div class="relative h-72">
+      <img id="modal-img" src="" alt="Project Image" class="w-full h-full object-cover">
+      <button onclick="closeModal()" class="absolute top-4 right-4 bg-slate-950/80 text-white w-9 h-9 rounded-full flex items-center justify-center text-xl hover:bg-slate-950">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+    <div class="p-6 sm:p-8">
+      <h3 id="modal-title" class="font-cinzel text-2xl font-bold text-white mb-2">Project Title</h3>
+      <div class="flex items-center gap-4 text-xs text-gold-400 mb-4 font-semibold">
+        <span id="modal-loc"><i class="ri-map-pin-line"></i> Location</span>
+        <span id="modal-time"><i class="ri-time-line"></i> Duration</span>
+      </div>
+      <p id="modal-desc" class="text-stone-300 text-sm leading-relaxed mb-6 font-light">Project description goes here.</p>
+      <div class="flex justify-end gap-4">
+        <button onclick="closeModal()" class="bg-stone-800 text-white px-5 py-2.5 rounded-lg text-xs font-semibold">Close</button>
+        <a href="#contact" onclick="closeModal()" class="gold-gradient-bg text-slate-950 px-5 py-2.5 rounded-lg text-xs font-bold">Request Similar Work</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script>
+  // Mobile Menu Toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Hero Slideshow Logic
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+
+  function setSlide(index) {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.classList.remove('opacity-0', 'z-0');
+        slide.classList.add('opacity-100', 'z-10');
+      } else {
+        slide.classList.remove('opacity-100', 'z-10');
+        slide.classList.add('opacity-0', 'z-0');
+      }
+    });
+    dots.forEach((dot, i) => {
+      if (i === index) {
+        dot.classList.remove('bg-stone-600');
+        dot.classList.add('bg-gold-500');
+      } else {
+        dot.classList.remove('bg-gold-500');
+        dot.classList.add('bg-stone-600');
+      }
+    });
+    currentSlide = index;
+  }
+
+  setInterval(() => {
+    let next = (currentSlide + 1) % slides.length;
+    setSlide(next);
+  }, 6000);
+
+  // Before & After Interactive Slider Logic
+  const sliderContainer = document.getElementById('slider-container');
+  const afterContainer = document.getElementById('after-container');
+  const sliderHandle = document.getElementById('slider-handle');
+  let isDragging = false;
+
+  function updateSliderPosition(x) {
+    const rect = sliderContainer.getBoundingClientRect();
+    let position = ((x - rect.left) / rect.width) * 100;
+    if (position < 0) position = 0;
+    if (position > 100) position = 100;
+    afterContainer.style.width = `${position}%`;
+    sliderHandle.style.left = `${position}%`;
+  }
+
+  sliderContainer.addEventListener('mousedown', (e) => { isDragging = true; updateSliderPosition(e.clientX); });
+  window.addEventListener('mouseup', () => { isDragging = false; });
+  window.addEventListener('mousemove', (e) => { if (isDragging) updateSliderPosition(e.clientX); });
+
+  sliderContainer.addEventListener('touchstart', (e) => { isDragging = true; updateSliderPosition(e.touches[0].clientX); });
+  window.addEventListener('touchend', () => { isDragging = false; });
+  window.addEventListener('touchmove', (e) => { if (isDragging) updateSliderPosition(e.touches[0].clientX); });
+
+  // Cost Estimator Calculator
+  let materialMult = 1.0;
+
+  function setMaterial(mult, btn) {
+    materialMult = mult;
+    document.querySelectorAll('.est-mat-btn').forEach(b => {
+      b.classList.remove('bg-gold-500', 'text-slate-950', 'font-bold');
+      b.classList.add('bg-slate-950', 'text-stone-300', 'font-medium');
+    });
+    btn.classList.remove('bg-slate-950', 'text-stone-300', 'font-medium');
+    btn.classList.add('bg-gold-500', 'text-slate-950', 'font-bold');
+    calculateEstimate();
+  }
+
+  function calculateEstimate() {
+    const basePrice = parseFloat(document.getElementById('est-type').value);
+    const area = parseInt(document.getElementById('est-area').value);
+    document.getElementById('est-area-val').innerText = `${area} sq ft`;
+
+    let rate = basePrice * materialMult;
+    if (document.getElementById('est-waterproof').checked) rate += 4;
+    if (document.getElementById('est-heated').checked) rate += 8;
+
+    const minTotal = Math.round(rate * area);
+    const maxTotal = Math.round(minTotal * 1.25);
+
+    document.getElementById('est-price-display').innerText = `$${minTotal.toLocaleString()} - $${maxTotal.toLocaleString()}`;
+  }
+
+  function bookWithEstimate() {
+    const est = document.getElementById('est-price-display').innerText;
+    const area = document.getElementById('est-area-val').innerText;
+    document.getElementById('form-msg').value = `Hi, I used your online estimator for a ~${area} project with an estimated budget of ${est}. I would like to schedule an on-site visit.`;
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Portfolio Filter
+  function filterPortfolio(cat, btn) {
+    document.querySelectorAll('.port-filter').forEach(b => {
+      b.classList.remove('bg-gold-500', 'text-slate-950', 'font-bold');
+      b.classList.add('text-stone-300', 'font-medium');
+    });
+    btn.classList.remove('text-stone-300', 'font-medium');
+    btn.classList.add('bg-gold-500', 'text-slate-950', 'font-bold');
+
+    document.querySelectorAll('.port-item').forEach(item => {
+      if (cat === 'all' || item.classList.contains(cat)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  // Portfolio Modal Logic
+  function openModal(title, img, desc, loc, duration) {
+    document.getElementById('modal-title').innerText = title;
+    document.getElementById('modal-img').src = img;
+    document.getElementById('modal-desc').innerText = desc;
+    document.getElementById('modal-loc').innerHTML = `<i class="ri-map-pin-line"></i> ${loc}`;
+    document.getElementById('modal-time').innerHTML = `<i class="ri-time-line"></i> Duration: ${duration}`;
+    document.getElementById('project-modal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('project-modal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+
+  // Form Submission Mock
+  function submitForm(e) {
+    e.preventDefault();
+    document.getElementById('contact-form').reset();
+    document.getElementById('form-success').classList.remove('hidden');
+    setTimeout(() => {
+      document.getElementById('form-success').classList.add('hidden');
+    }, 6000);
+  }
 </script>
 </body>
 </html>

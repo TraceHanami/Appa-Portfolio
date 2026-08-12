@@ -1,0 +1,29 @@
+{
+  "name": "elite-tile-granite-works",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Elite Tile & Granite Works - Premium Stone & Tiling Craftsmanship Portfolio",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "tiling",
+    "granite",
+    "marble",
+    "craftsmanship",
+    "portfolio",
+    "flooring",
+    "construction"
+  ],
+  "author": "TraceHanami",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.1.0"
+  }
+}
